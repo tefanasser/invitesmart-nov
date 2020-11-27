@@ -1,0 +1,47 @@
+<ion-header class="headertm">
+  <ion-toolbar style="padding-top: 20px !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 20px;"> 
+      <!-- <button routerLink="/scan-guest" routerDirection="root" class="scan-button">SCAN</button> -->
+      <button (click)="goBack()" class="btn thumb-nail-button"    color="light"> {{'page.back' | translate}}</button>
+  </ion-toolbar> 
+</ion-header>
+<ion-content padding class="buy-guest">
+    <ion-row style="text-align: center;margin-top:10px;">
+        <ion-col><b>{{'page.choose_package' | translate}} </b></ion-col>
+      </ion-row>
+  <div *ngIf="isLoader" style="margin-left:49%;"><ion-spinner name="lines"></ion-spinner></div>    
+  <div *ngIf="products.length > 0">
+    <ion-card *ngFor="let product of products">
+      <ion-card-header class="title" style="text-align: center;">{{ product.title | uppercase}}</ion-card-header>
+      <ion-row>
+        <ion-col>
+        </ion-col>
+        <ion-col>
+          <button text-center class="btn button" ion-button block (click)="buyProduct(product.productId)">
+              {{'page.buy_now' | translate}} - {{ product.price }} 
+          </button>
+        </ion-col>
+        <ion-col>
+          
+          </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>    
+  <div *ngIf="products.length == 0" style="margin-top:100px;">
+    <h4 style="text-align: center; font-family: oswald"> {{'page.no_guest_package_found' | translate}}</h4>
+  </div>
+
+</ion-content>
+<footer class="footer">
+    <div style="float:left;">
+      <img src="assets/72x72.png">
+    </div>
+    <div style="float:left;">
+      <span class="footer-text"><a href="http://invitesmartapp.com/?reqp=1&reqr="  target="_blank">WWW.INVITESMARTAPP.COM</a></span>
+    </div>
+    <div style="float:right;margin-top: 15px;">
+        <ion-icon routerLink="/setting" ios="ios-settings" md="md-settings" style="zoom:3.0; color:#3E51B5;"></ion-icon>
+    </div>
+  
+  </footer>

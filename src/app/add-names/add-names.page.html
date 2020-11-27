@@ -1,0 +1,71 @@
+<ion-header class="headertm">
+  <ion-toolbar style="padding-top: 20px !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 20px;"> 
+      <!-- <button routerLink="/scan-guest" routerDirection="root" class="scan-button">SCAN</button> -->
+      <button type="submit" routerLink="/thumbnails" routerDirection="root" class="btn thumb-nail-button"
+          color="light"> {{'page.next' | translate}}</button>
+  </ion-toolbar> 
+</ion-header>
+<ion-content class="centered container">
+    <ion-grid class="ion-padding-top">
+        <ion-row>
+          <!-- <ion-col class="font-bold mgbottom50 font20">
+            ENTER THE ONE-TIME<br>PASSWORD SEND TO<br>YOUR PHONE
+          </ion-col> -->
+        </ion-row>
+    <ion-row>
+     <ion-col size="12">
+     
+        <form  class="form " class="form-deco form app-form-area">
+            <div class="row" style="text-align: -webkit-center;">
+                <div class="input-group prefix">
+                  <!-- <ion-item> -->
+                    <textarea [(ngModel)]="name"rows="10" cols="29" placeholder="{{'page.please_add_names_or_past' | translate}}" [ngModelOptions]="{standalone: true}"></textarea>
+                  <!-- </ion-item> -->
+                </div>
+              </div> 
+          <!-- <ion-item class="create-item create-user-2 united-state-field" style="padding: 0px;border: 1px solid rgb(104, 180, 245);">
+              <ion-input type="number" class="center-block" [(ngModel)]="image_code" formControlName="image_code"  placeholder="Text Box"></ion-input>
+            </ion-item> -->
+            <!-- <div class="validation-errors">
+              <ng-container *ngFor="let validation of validation_messages.image_code" >
+                <div class="error-message"
+                  *ngIf="number_form.get('image_code').hasError(validation.type) && (number_form.get('image_code').dirty || number_form.get('image_code').touched)">
+                  <ion-icon style="color: red;" ios="ios-information-circle" md="md-information-circle"></ion-icon><span style="color: red;">{{validation.message}}</span>
+                </div>
+              </ng-container>
+            </div> -->
+            <br>
+          <br>
+
+          <div class="row">
+              <button type="submit"  (click)="addNames()" class="btn send-button"
+                color="primary">{{'page.add_names' | translate}}</button>
+            </div>
+        </form>
+        <div style="margin-top:10px !important" *ngIf="isLoader"><ion-spinner name="lines"></ion-spinner></div>
+        <ion-list *ngFor="let user of guests">
+          <ion-item *ngIf="user.name !== ''"><ion-label ><b>{{user.name | uppercase}}</b></ion-label>
+            <ion-icon class="cross-icon-style" (click)="deleteRecord(user._id)" ios="ios-close" md="md-close"></ion-icon>
+            <!-- <img src="assets/arrow.png"  (click)="deleteRecord(user._id)" style="margin-top:0px;"> -->
+            <!-- <ion-icon  name="arrow-forward" ></ion-icon> -->
+          </ion-item>
+        
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<footer class="footer">
+    <div style="float:left;">
+      <img src="assets/72x72.png">
+    </div>
+    <div style="float:left;">
+      <span class="footer-text"><a href="http://invitesmartapp.com/?reqp=1&reqr="  target="_blank">WWW.INVITESMARTAPP.COM</a></span>
+    </div>
+       <div style="float:right;margin-top: 15px;">
+        <ion-icon routerLink="/setting" ios="ios-settings" md="md-settings" style="zoom:3.0; color:#3E51B5;"></ion-icon>
+    </div>
+  </footer>
+

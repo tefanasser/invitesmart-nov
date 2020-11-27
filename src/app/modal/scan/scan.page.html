@@ -1,0 +1,24 @@
+
+  <ion-content class="centered container">
+      <ion-grid class="ion-padding-top grid-padding">
+          <ion-icon *ngIf="isScanned && !isEmpty" class="cross-icon-style" ios="ios-close-circle" md="md-close-circle"></ion-icon>
+          <ion-icon *ngIf="isEmpty" class="cross-icon-style" ios="ios-close-circle" md="md-close-circle"></ion-icon>
+          <ion-icon *ngIf="!isScanned && !isEmpty" class="check-icon-style" ios="ios-checkmark-circle" md="md-checkmark-circle"></ion-icon>
+      <ion-row>
+        <ion-col size="12">
+            <span *ngIf="isEmpty">
+                <h3 color="primary"  style="margin-top:20px;"> {{'page.code_inccorect' | translate}}</h3>
+            </span>
+            <span *ngIf="!isEmpty">
+                <h3 color="primary" *ngIf="!isScanned && name" style="margin-top:20px;">{{'page.Guest_scaned_correctly' | translate}}</h3>
+                <h3 color="primary" *ngIf="isScanned && name" style="margin-top:20px;">{{'page.guest_already_scaned' | translate}}</h3>
+                <h3 color="primary" *ngIf="!isScanned && !name" style="margin-top:20px;">{{'page.Guest_scaned_correctly' | translate}}</h3>
+                <h3 color="primary" *ngIf="isScanned && !name" style="margin-top:20px;">{{'page.guest_already_scaned' | translate}}</h3>
+            </span>
+            <button style="margin-right:15px;" type="submit" (click)="closeModal()" class="btn send-button" color="primary">{{'page.ok' | translate}}</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  
+  

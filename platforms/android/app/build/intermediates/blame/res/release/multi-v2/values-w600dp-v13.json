@@ -1,0 +1,70 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/lenovo03/Desktop/invite-smart/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/dd4fa0ed122ca392de89a6b00088d374/res/values-w600dp/values-w600dp.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "290,354",
+                        "endColumns": "63,54",
+                        "endOffsets": "349,404"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,119",
+                        "endColumns": "63,54",
+                        "endOffsets": "114,169"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/lenovo03/Desktop/invitesmartios/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/6bbfe8d748952160a2774a8f2853f842/res/values-w600dp/values-w600dp.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "290,354",
+                        "endColumns": "63,54",
+                        "endOffsets": "349,404"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,119",
+                        "endColumns": "63,54",
+                        "endOffsets": "114,169"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/lenovo03/Desktop/project/invitesmartios/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/6bbfe8d748952160a2774a8f2853f842/res/values-w600dp/values-w600dp.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "290,354",
+                        "endColumns": "63,54",
+                        "endOffsets": "349,404"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,119",
+                        "endColumns": "63,54",
+                        "endOffsets": "114,169"
+                    }
+                }
+            ]
+        }
+    ]
+}

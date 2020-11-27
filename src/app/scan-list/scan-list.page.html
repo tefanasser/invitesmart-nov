@@ -1,0 +1,39 @@
+<ion-header class="headertm">
+  <ion-toolbar style="padding-top: 20px !important;margin-bottom: 15px;margin-top:15px;"> 
+      <!-- <button routerLink="/scan-guest" routerDirection="root" class="scan-button">SCAN</button> -->
+      <button routerLink="/thumbnails" routerDirection="root" class="btn thumb-nail-button"
+          color="light"> {{'page.back' | translate}}</button>
+          <button routerLink="/scan-guest" routerDirection="root" class="btn thumb-nail-button"
+    color="light">{{'page.scan' | translate}}</button>
+  </ion-toolbar> 
+</ion-header>
+<ion-content class="guest-list">
+    <ion-toolbar class="sub-header">
+        <ion-title>{{'page.scanned_guest_list' | translate}}</ion-title>
+      </ion-toolbar>
+        <!-- Item Dividers in a List -->
+        <ion-list *ngFor="let user of names">
+          <ion-item><ion-label><b>{{user.name ? user.name : user.invitationCode | uppercase}}</b></ion-label>
+            <ion-datetime display-format="h:mm A" picker-format="h:mm A" value="{{user.updatedAt}}"></ion-datetime>
+            <ion-datetime display-format="DD-MM-YYYY" picker-format="h:mm A" value="{{user.updatedAt}}"></ion-datetime>
+            <!-- <img src="assets/arrow.png"  (click)="deleteRecord(user._id)" style="margin-top:0px;"> -->
+            <!-- <ion-icon  name="arrow-forward" ></ion-icon> -->
+          </ion-item>
+        </ion-list>
+</ion-content>
+<footer class="footer">
+    <div style="float:left;">
+      <img src="assets/72x72.png">
+    </div>
+    <div style="float:left;">
+      <span class="footer-text"><a href="http://invitesmartapp.com/?reqp=1&reqr="  target="_blank">WWW.INVITESMARTAPP.COM</a></span>
+    </div>
+    <div style="float:right;margin-top: 15px;">
+        <ion-icon routerLink="/setting" ios="ios-settings" md="md-settings" style="zoom:3.0; color:#3E51B5;"></ion-icon>
+    </div>
+  
+  </footer>
+
+
+
+

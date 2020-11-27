@@ -1,0 +1,54 @@
+<ion-header class="headertm">
+  <ion-toolbar style="padding-top:10px !important;padding-bottom: 10px !important;"> 
+      <!-- <button routerLink="/scan-guest" routerDirection="root" class="scan-button">SCAN</button> -->
+      <button routerLink="/invitation-type" routerDirection="root" class="btn thumb-nail-button"
+          color="light"> {{'page.back' | translate}}</button>
+  </ion-toolbar> 
+</ion-header>
+<ion-content class="centered container">
+    <ion-grid class="ion-padding-top grid-padding">
+        <ion-row>
+          <!-- <ion-col class="font-bold mgbottom50 font20">
+            ENTER THE ONE-TIME<br>PASSWORD SEND TO<br>YOUR PHONE
+          </ion-col> -->
+        </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <form [formGroup]="number_form" class="form " class="form-deco form app-form-area">
+            <div class="row" style="text-align: -webkit-center;">
+                <div class="input-group prefix">
+                  <ion-input type="number" [(ngModel)]="no_of_guest" formControlName="no_of_guest"  placeholder=""></ion-input>
+                </div>
+              </div> 
+            <div class="validation-errors">
+              <ng-container *ngFor="let validation of validation_messages.no_of_guest" >
+                <div class="error-message"
+                  *ngIf="number_form.get('no_of_guest').hasError(validation.type) && (number_form.get('no_of_guest').dirty || number_form.get('no_of_guest').touched)">
+                  <ion-icon style="color: red;" ios="ios-information-circle" md="md-information-circle"></ion-icon><span style="color: red;">{{validation.message}}</span>
+                </div>
+              </ng-container>
+            </div>
+            <br>
+          <br>
+          <div class="row">
+              <button type="submit" [disabled]="!number_form.valid" (click)="update_invitation()" class="btn send-button"
+                color="primary">{{'page.numbers_only' | translate}}</button>
+            </div>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<footer class="footer">
+    <div style="float:left;">
+      <img src="assets/72x72.png">
+    </div>
+    <div style="float:left;">
+      <span class="footer-text"><a href="http://invitesmartapp.com/?reqp=1&reqr="  target="_blank">WWW.INVITESMARTAPP.COM</a></span>
+    </div>
+    <div style="float:right;margin-top: 15px;">
+        <ion-icon routerLink="/setting" ios="ios-settings" md="md-settings" style="zoom:3.0; color:#3E51B5;"></ion-icon>
+    </div>
+  
+  </footer>
+

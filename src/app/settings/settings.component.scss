@@ -1,0 +1,78 @@
+ion-header {
+    position:none !important;
+    background-color: #DDDBDB;
+    height:100px !important;
+}
+.en-button {
+    background-color: #3E51B5;
+    margin-top: 13px;
+    border-radius: 0px !important;
+    padding: 7px;
+    font-size: 27px;
+    font-family: 'oswald';
+    width: 100px;
+    margin-left: 17px;
+    margin-top: 29px;
+    cursor: pointer;
+    color: #fff;
+}
+.ar-button {
+    background-color: #3E51B5;
+    margin-top: 13px;
+    border-radius: 0px !important;
+    padding: 7px;
+    font-size: 27px;
+    font-family: 'oswald';
+    width: 100px;
+    margin-left: 17px;
+    margin-top: 5px;
+    cursor: pointer;
+    color:#fff;
+}
+.h2-tag {
+    font-family: 'oswald';
+    font-size: 21px;
+    float: right;
+    margin-top: 23px;
+}
+.h2-tag-c {
+    font-family: 'oswald';
+    font-size: 21px;
+    float: right;
+    margin-top: 8px;
+}
+.footer-text {
+    display: block;
+    margin-top: 24px;
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
+}
+.setting-icon {
+    top: 0;
+    left: 0;
+    // padding-left: 24%;
+    // padding-right: 10%;
+    text-align: right;
+}
+.icon-div {
+    zoom:4.0; color:#3E51B5;margin-top:5px !important
+}
+.options {
+    font-size: 29px;
+  position: absolute;
+//   padding-left: 25px;
+  padding-top: 27px;
+}
+.thumb-nail-button {
+    color: white;
+    background-color: #3E51B5;
+    border-radius: 29px;
+    padding: 18px;
+    font-size: 14px;
+    font-family: "oswald";
+    float: left;
+     margin-left: 18px;
+    margin-top: 25px;
+    z-index: 99999;
+}

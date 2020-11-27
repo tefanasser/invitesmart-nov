@@ -1,0 +1,164 @@
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+ .sub-header {
+   --background: #D3D1D1;
+   color:white;
+   text-align: center;
+   margin-top:10px;
+ }
+ ion-title {
+   position: absolute;
+   top: 0;
+   left: 45;
+//    padding: 0 90px 1px;
+  //  width: 100% !important;
+  //  height: 100% !important;
+   text-align: center;
+   font-family: 'oswald';
+   font-weight: normal;
+   z-index: -1;
+   display: inline-block;
+   margin-top:10px;
+
+ }
+ ion-content ion-toolbar ion-title{
+   left: 0;
+
+ }
+ .item.sc-ion-label-ios-h, .item .sc-ion-label-ios-h {
+   font-family: 'Oswald' !important;
+ }
+ .list-md {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0px !important ;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0px !important;
+}
+.ion-list {
+  display:contents !important;
+}
+.mgbottom20 img {
+  width: 100% !important;
+  border: 0;
+  height: 95px !important;
+  font-weight: bold;
+  padding:5px;
+}
+.card {
+    background-color: #D3D1D1;
+    width:150px; 
+    height: auto;
+}
+.plus-icon {
+  zoom: 3.0; color: #3E51B5;
+  margin-top:3px;
+  height:auto;
+
+}
+.thumb-nail-button {
+  color: white;
+    background-color: #3E51B5;
+    border-radius: 29px;
+    padding: 13px;
+    font-size: 13px;
+    font-family: "oswald";
+    float: left;
+    margin-left: 6px;
+    margin-top: 5px;
+    z-index: 99999;
+}
+ion-toast.success .toast-wrapper {
+  background: white !important;
+  width:400px;
+  height:300px;
+}
+
+ion-toast.error .toast-wrapper {
+	background: rgb(209, 71, 71);
+}
+.modalCss {
+  height: 80% !important;
+}
+.sc-ion-modal-md-h {
+  --width: 75% !important;
+ --height: 80% !important;
+}
+.scan-button {
+  position:fixed;
+  border-radius: 29px;
+  // padding: 20px;
+  font-size: 20px;
+  font-family: "oswald";
+  margin: 45px;
+  float: left;
+  --background:#3E51B5;
+  --border-radius:29px;
+  // bottom: 3vh;
+  right: 3vh;
+}
+.ion-header {
+  height:0px !important;
+}
+// .title {
+//   display: inline-block;
+//   margin-top: 8px !important;
+// }
+ion-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cross-icon {
+  float: left;
+  color: black;
+  // width: 30px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 0px 0px 10px;
+}
+.del-b {
+  float: right;
+  padding-right: 10px;
+  padding-top: 5px;
+  color: black;
+  font-size: 20px;
+}
+.share-tilte-text {
+  word-wrap: break-word;
+  width: auto;
+  float: left;
+  font-size: 15px;
+  margin: 5px 0px 5px 5px;
+  color: black;
+  font-weight: bold;
+}
+.container { position: relative;margin-top: 30px; }
+.container img {
+  display: block;
+  opacity: 0.5;
+}
+
+.container .share-icon-style {
+  position: absolute;
+  bottom: 19px;
+  left: 43px;
+}
+

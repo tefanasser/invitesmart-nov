@@ -1,0 +1,56 @@
+<ion-header class="headertm">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="5"> <button (click)="back()" class="btn thumb-nail-button"    color="light"> {{'page.back' | translate}}</button>
+        </ion-col>
+        <ion-col size="3">
+            <span class="setting-icon" >
+                <ion-icon ios="ios-settings" md="md-settings" class="icon-div"></ion-icon>
+              </span>
+        </ion-col>
+        <ion-col size="4"><span class="options"> {{ 'page.options' | translate }}</span></ion-col>
+      </ion-row>
+      </ion-grid>
+  
+  
+
+
+</ion-header>
+<ion-content class="centered container">
+  <ion-grid>
+    <ion-row style="margin-top:10px">
+      <ion-col size="5">
+        <h2 class="h2-tag">{{ 'page.language' | translate }}</h2>
+      </ion-col>
+      <ion-col size="4">
+          <button (click)="changeLanguage('en')" type="submit" class="btn en-button">EN</button>
+          <button (click)="changeLanguage('ar')" type="submit" class="btn ar-button">Arabic</button>
+      </ion-col>
+    </ion-row>
+    <ion-row style="margin-top:10px">
+        <ion-col size="5">
+            <h2 class="h2-tag">{{ 'page.logout' | translate }}</h2>
+          </ion-col>
+          <ion-col size="4">
+              <img (click)="logout()" src="assets/logout.png" width=50 height=50 style="margin-top:20px;">
+          </ion-col>
+    </ion-row>
+    <ion-row style="margin-top:10px">
+        <ion-col size="5">
+            <h2 class="h2-tag-c">{{ 'page.contact' | translate }}</h2>
+          </ion-col>
+          <ion-col size="4">
+              <img (click)=" whatsup_redirect()" src="assets/whatsup-icon.png"
+              />
+          </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<footer class="footer">
+  <div style="float:left;">
+    <img src="assets/72x72.png">
+  </div>
+  <div>
+    <span class="footer-text"><a href="http://invitesmartapp.com/?reqp=1&reqr="  target="_blank">WWW.INVITESMARTAPP.COM</a></span>
+  </div>
+</footer>

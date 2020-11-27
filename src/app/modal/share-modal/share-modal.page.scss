@@ -1,0 +1,69 @@
+.sc-ion-modal-md-h {
+    --width: 100% !important;
+    --height: 100% !important;
+}
+.my-custom-modal .modal-wrapper {
+  height: 100%; 
+  width: 100% !important;
+  display: block;
+}
+.modalCss {
+    height: 100% !important;
+  }
+  .cust-share {
+    color: white;
+    background-color: #3E51B5;
+    margin-top: 25px;
+    border-radius: 29px;
+    padding: 15px;
+    font-size: 14px;
+    font-family: "oswald";
+   
+
+  }
+.cust-close {
+    color: white;
+    background-color: #3E51B5;
+    margin-top: 25px;
+    border-radius: 29px;
+    padding: 15px;
+    font-size: 14px;
+    font-family: "oswald";
+   
+}
+// img {
+    // max-height: 100% !important;
+    // max-width: 100% !important;
+//  }
+.imgSize {
+    background-size: contain;
+    height:100%;
+
+}
+p {
+    font-family: Lato;
+  }
+  ion-content {
+    // background:#233B3B !important;
+    text-align:center;
+}
+.newBG {
+    background:#fff !important;
+}
+
+
+.image img {
+    // border: 5px solid #365454;
+    // width:100%;
+    // margin-top: 2em
+}
+  
+canvas {
+    display: none;
+}
+.footer-text {
+    
+}
+.qrcode img {
+    max-width: 80% !important;
+}

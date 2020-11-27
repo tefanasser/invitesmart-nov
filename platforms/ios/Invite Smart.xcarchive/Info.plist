@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/Invite Smart.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>com.invitesmart1234</string>
+		<key>CFBundleShortVersionString</key>
+		<string>0.0.19</string>
+		<key>CFBundleVersion</key>
+		<string>0.0.19</string>
+		<key>SigningIdentity</key>
+		<string>Apple Development: latifa almulhem (W7YM6JV2SK)</string>
+		<key>Team</key>
+		<string>TB733749DV</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2020-10-05T14:01:14Z</date>
+	<key>Name</key>
+	<string>Invite Smart</string>
+	<key>SchemeName</key>
+	<string>Invite Smart</string>
+</dict>
+</plist>

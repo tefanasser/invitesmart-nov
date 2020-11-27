@@ -1,0 +1,70 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/lenovo03/Desktop/invitesmartios/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ldrtl-v23/values-ldrtl-v23.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/6bbfe8d748952160a2774a8f2853f842/res/values-ldrtl-v23/values-ldrtl-v23.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "298",
+                        "endColumns": "112",
+                        "endOffsets": "406"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/lenovo03/Desktop/invite-smart/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ldrtl-v23/values-ldrtl-v23.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/dd4fa0ed122ca392de89a6b00088d374/res/values-ldrtl-v23/values-ldrtl-v23.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "298",
+                        "endColumns": "112",
+                        "endOffsets": "406"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/lenovo03/Desktop/project/invitesmartios/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ldrtl-v23/values-ldrtl-v23.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/6bbfe8d748952160a2774a8f2853f842/res/values-ldrtl-v23/values-ldrtl-v23.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "298",
+                        "endColumns": "112",
+                        "endOffsets": "406"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

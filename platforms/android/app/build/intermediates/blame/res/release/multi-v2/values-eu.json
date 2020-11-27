@@ -1,0 +1,100 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/lenovo03/Desktop/invitesmartios/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-eu/values-eu.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/94db1d5bcb39b8cfe8f5fc7569a43daf/res/values-eu/values-eu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                },
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/071163d747d396068ef01c26b5ec248d/res/values-eu/values-eu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,119,168,316",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "114,163,311,423"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "156,220,269,417",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "215,264,412,524"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/lenovo03/Desktop/invite-smart/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-eu/values-eu.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/73a921a61f95807a98a642f7513815f8/res/values-eu/values-eu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,119,168,316",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "114,163,311,423"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "156,220,269,417",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "215,264,412,524"
+                    }
+                },
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/bf1f727b050cdc678c66f9d71d155922/res/values-eu/values-eu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/lenovo03/Desktop/project/invitesmartios/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-eu/values-eu.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/94db1d5bcb39b8cfe8f5fc7569a43daf/res/values-eu/values-eu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                },
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/071163d747d396068ef01c26b5ec248d/res/values-eu/values-eu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,119,168,316",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "114,163,311,423"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "156,220,269,417",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "215,264,412,524"
+                    }
+                }
+            ]
+        }
+    ]
+}

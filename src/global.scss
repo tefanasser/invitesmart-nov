@@ -1,0 +1,508 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+body {
+  font-family: 'oswald';
+}
+.item-native{
+    border: 1px solid blue !important;
+    padding-left:55px;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color:#30302d;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+    color:#30302d;
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+    color:#30302d;
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+    color:#30302d;
+ }
+app-thumbnails {
+  // ion-header {
+  //     --ion-background-color:#7B8D93;
+  // }
+  // ion-content{
+
+  //     --ion-background-color:#D0D7DB;
+  // }   
+}
+// app-home {
+  .btn {
+      --border-radius: 0%;
+    }
+  .item.item-input {
+    width:45%; 
+    display: block;
+    margin : 0 auto;
+    }
+    .ion-padding-top {
+      --padding-top: var(--ion-padding, 50px);
+      padding-top: var(--ion-padding, 50px);
+    }
+// }
+.thumbnail {
+    float: left;
+    // width: 110px;
+    margin-bottom: 10px;
+    margin: 20x;
+    // margin-bottom: 10px;
+    margin-left: 47px;
+}
+.header-color {
+    background-color: #78909C;
+}
+.img {
+    max-width:75%;
+}
+.ion-color-light{
+  --ion-color-base: var(--ion-color-light, #78909C) !important
+}
+a{
+  background-color:  darkslategrey
+}
+.sc-ion-input-ios-h {
+  --placeholder-color: #30302d;     /* placeholder text color */
+  color: var(--#30302d); /* input text color to primary */
+}
+  
+.text-input::-moz-placeholder {
+    color: #30302d;
+  }
+  
+.text-input:-ms-input-placeholder {
+  color: #30302d;
+}
+
+.text-input::-webkit-input-placeholder {
+  color: #30302d  ;
+}
+.text-color {
+  color:#30302d
+  }
+  .back-button {
+  height: 40px;
+  width: 131px;
+  color: white;
+  background-color: #78909C;
+  display: block;
+  margin-left: 33px;
+  }
+  .sc-ion-modal-md-h {
+  --width: 75%;
+  --height: 54%;
+}
+.share-button {
+  height: 40px;
+  width: 75px;
+  color: white;
+  background-color: #78909C;
+  display: block;
+  margin-left: 0px;
+  float:left;
+  margin:5px;
+}
+.icon-inner {
+ color:darkslategrey;
+}
+.plus-icon-style {
+  zoom: 3.0;margin-bottom: 2px;margin-top: 1px; color: #3E51B5; float:right;
+}
+.grid-area-style {
+  float:left;
+}
+.share-icon-style {
+  width: 55px;
+  height: 55px;
+  color: black;
+  /* margin-left: 92px !important; */
+  /* margin-top: -33px; */
+}
+// .share-icon-style {
+//   width: 85px;
+//     height: 34px;
+//     color: black;
+//     // margin-left: 10px !important;
+//     margin-left: 92px !important;
+//     margin-top: -33px;
+// }
+// .thumbnail-image {
+// //  margin:10px; margin-top: -30px;
+// }
+.thumbnail-image-code {
+  padding-left: 38px;;margin-bottom:10px; color: #30302d;
+}
+.thumbnail-back-button {
+  width:40px; margin:10px; margin-top:20px;
+}
+.mgbottom20 { 
+  margin-bottom:20px;
+}
+.mgbottom50 {
+  margin-bottom:50px;
+  margin-top:10px;
+  font-family: 'oswald'
+}
+.add-number-button {
+  height: 80px; width: 200px; color:white; background-color:#78909C;
+}
+.submit-button {
+  height: 40px;
+  width: 130px;
+  color: white;
+  background-color: #78909C;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.send-button{
+  color: white;
+  background-color: #3E51B5;
+  margin-top: 40px;
+  border-radius: 29px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'oswald';
+}
+.add-name-button {
+  height: 80px; width: 200px; color:#a6a6a6;margin-top:10px;
+}
+.toolbar-background {
+  background-color: #78909C;
+}
+  
+.font20{
+  font-size: 20px;
+}
+ion-backdrop {
+  opacity: 0.75 !important;
+}
+app-sign-up {
+  .item.item-input {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+}
+.square {
+  height: 20px;
+  width: 20px;
+  background-color: #D0D7DB;
+  margin-top:-4px;
+}
+.square2 {
+  height: 20px;
+  width: 20px;
+  background-color: #D0D7DB;
+  float:right;
+  margin-top:-4px;
+}
+#partitioned {
+  padding-left: 15px;
+  letter-spacing: 42px;
+  border: 0;
+  background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 50px 1px;
+  background-repeat: repeat-x;
+  background-position-x: 35px;
+  width: 220px;
+}
+.login-validation {
+  margin-top:30px;
+}
+.alert-head.sc-ion-alert-md + .alert-message.sc-ion-alert-md {
+ color:red;
+ margin-left:30px !important;
+}
+app-create-invitation {
+  .item.item-input {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    background-color: #D0D7DB;
+}
+.plus-icon-style {
+  zoom: 1.5;margin-bottom: 2px;margin-top: 1px; float:right;
+}
+.submit-btn {
+  height: 40px;
+  color: white;
+  // background-color: #78909C;
+  margin-bottom: 30px;
+  margin: 20px 0px 0px 0px;
+  // float: right;
+}
+.submit-button1 {
+  --background: rgb(148, 156, 161) !important;
+}
+  .back-button1 {
+  --display: inline-block;
+   height: 40px;
+   color: white;
+   width:85%;
+   --background: rgb(148, 156, 161) !important;
+    float:left;
+    margin: 20px 0px 0px 0px;
+    margin-bottom: 30px;
+  }
+  .item-native {
+    background-color: red;
+  }
+
+}
+.ptext {
+  color: 30302d;
+}
+.alert-message {
+  color:red !important;
+}
+.alert-button-inner {
+  color:#30302d !important;
+}
+
+.form-deco{
+    justify-content: center;
+    align-items: center!important;
+    margin-top:40px;
+}
+
+.centered{
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+.font-bold{
+  font-weight: bold
+}
+.grid-padding {
+  padding: 34px;
+}
+.lower-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  // margin-top:30px;
+
+}
+.lower-content img {
+  margin-top: 15%;
+    margin-bottom: 5%;
+  //  width: 100px;
+  //   height: 100px;
+}
+.list-ios {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  background: var(--ion-item-background,var(--ion-background-color,#fff));
+}
+.item-inner {
+  border-bottom:1px solid red !important;
+}
+.item .sc-ion-label-md-h, h3 {
+  font-family: 'oswald'
+}
+.list-md {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0px !important ;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0px !important;
+}
+app-create-invitation {
+  .native-input.sc-ion-input-md {
+    width:80% !important;
+   }
+}
+app-update-invitation {
+  .native-input.sc-ion-input-md {
+    width:80% !important;
+   }
+}
+// app-invitation {
+  ion-header {
+    height: 75px !important;
+  }
+// }
+app-add-names {
+  .item-inner {
+    border-bottom: #fff !important
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+    padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: 'oswald';
+    font-weight: bold;
+    font-size:20px;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+    padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: 'oswald';
+    font-weight: bold;
+    font-size:20px;
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+    padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: 'oswald';
+    font-weight: bold;
+    font-size:20px;
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+    padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: 'oswald';
+    font-weight: bold;
+    font-size:20px;
+ }
+}
+app-scan-guest {
+#scannerArea  img {
+    background-color: black;
+    opacity: 0.5;
+    max-width: 95%;
+    max-height: calc(98% - 100px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+  }
+  ion-app.cameraView ion-content{
+    --background: transparent none !important;
+  }
+
+}
+app-thumbnails {
+  .sc-ion-modal-md-h {
+  --width: 75% !important;
+ --height: 80% !important;
+}
+}
+
+#scannerArea {
+  position: relative;
+  top: 2px;
+  left: 20px;
+  width: 90%;
+  height: 91% !important;
+  /* height: 250px; */
+  background-color: white;
+  border: 1px solid black;
+}
+.my-custom-modal .modal-wrapper {
+  height: 100%;
+  width: 100% !important;
+  display: block;
+}
+.button-inner.sc-ion-back-button-ios {
+  color:black;
+}
+.button-text {
+  display:none;
+}
+.message-modal{
+  width:90% !important;
+  height:80% !important;
+  margin-top:90px;
+  margin-left: 20px;
+}
+.footer {
+  background-color: #DDDBDB;
+    padding: 6px;
+    display: table-caption;
+}
+app-settings {
+  ion-header {
+    background-color: #DDDBDB;
+  }
+}
+.footer-text {
+  display: block; margin-top: 24px;font-size: 20px;  padding-left: 15px;
+  text-align: center;
+}
+@media only screen 
+and (max-width : 320px) {
+  .footer-text {
+    display: block;
+    margin-top: 24px;
+    font-size: 12px;
+    padding-left: 15px;
+    text-align: center;
+}
+}
+.footer a {
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+  font-family: "oswald";
+  cursor: pointer;
+  font-size:13px !important;
+}
+.headertm {
+  // margin-top:20px;
+  // margin-bottom:20
+}
+.list-md {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0px !important;
+  // padding: 50px;
+  // padding-right: 69px;
+  padding-top: 0px !important;
+}
+.qrcode img {
+  max-width: 80% !important;
+  margin-top:8px;
+}

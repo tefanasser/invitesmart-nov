@@ -1,0 +1,87 @@
+<ion-header >
+    <ion-toolbar class="headertm" style="padding-top: 20px !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 20px;">
+        <!-- <button routerLink="/scan-guest" routerDirection="root" class="scan-button">SCAN</button> -->
+        <ion-row>
+            <ion-col size=2>
+                <button type="submit" routerLink="/invitation" routerDirection="root" class="btn thumb-nail-button"
+                    color="light">{{'page.back' | translate}}</button>
+            </ion-col>
+            <ion-col size=5>
+                <button type="submit" style="margin-left: 14px;" routerLink="/scan-guest" class="btn thumb-nail-button"
+                    color="light">{{'page.scan' | translate}}</button>
+            </ion-col>
+            <ion-col size=3 style="margin-top: 18px;">
+                <div class="title main-header" style="margin-right:1px;"><span
+                        style="margin:-14px;">{{'page.add_guest' | translate}}</span></div>
+            </ion-col>
+            <!-- <ion-col size=1> -->
+            <ion-icon (click)="guests()" ios="ios-add-circle" md="md-add-circle" class="plus-icon"></ion-icon>
+            <!-- </ion-col> -->
+
+        </ion-row>
+
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <!-- <h2 style="margin-left:30px;">Comming Soon</h2> -->
+    <ion-toolbar text-center class="sub-header">
+      <span *ngIf="totalGuests" style="float:left;margin-left:10px;color:#3E51B5"><b>{{guestCount}} / {{totalGuests}}</b></span>  
+        <div *ngIf="images.length > 0" style="margin-left:10px">{{images[0].invitationId.event_name}}</div>
+    </ion-toolbar>
+    <!-- <ion-fab *ngIf="!isLoader">
+            <ion-fab-button routerLink="/scan-guest" routerDirection="root" class="scan-button">SCAN</ion-fab-button>
+    </ion-fab> -->
+    <ion-grid class="mgbottom20">
+        <!-- Item Dividers in a List -->
+        <div *ngIf="isLoader" style="margin-left:49%;">
+            <ion-spinner name="lines"></ion-spinner>
+        </div>
+        <div style="justify-content: center;" text-center>
+            <span *ngFor="let item of images; let i = index;" style="width:auto; float:left;">
+                <ion-card class="card">
+                    <span *ngIf="item._id">
+                        <span class="del-b" (click)="deleteRecord(item._id)">
+                            <ion-icon name="trash"></ion-icon>
+                        </span>
+                        <div class="container">
+                            <img [src]="item?.invitationId?.invitation_image ? item?.invitationId?.invitation_image: 'assets/default_image.png'"
+                                class="thumbnail-image" />
+                                <ion-icon style="float:left;padding-top: 6px;" *ngIf="item._id" class="share-icon-style"
+                                (click)="shareModal(item)" name="share"></ion-icon>
+                        </div>
+                    </span>
+                    <span >
+                        <!-- <ion-card-title style="float:left;" *ngIf="!name"> {{item.image_code}}</ion-card-title> -->
+                        <ion-card-title
+                            class="share-tilte-text ion-text-center" style="width:100%;">
+                            <span *ngIf="item.name">{{item.name}}</span>
+                            <span *ngIf="item._id && !item.name" style="font-size: 15px;"><span>{{item.invitationId.event_id}}</span><span style="color: hsl(60, 48%, 49%);">{{item.invitationCode}}</span></span>
+                            <span *ngIf="!item._id" style="padding:15px 20px 15px 40px;font-size:30px;float:left;">{{item.invitationCode}}</span>
+                        </ion-card-title>
+                      
+                    </span>
+                </ion-card>
+            </span>
+        </div>
+        <!-- <ion-row *ngIf="!isLoader"text-center style="width:100% !important; display: inline-block; margin-left:100px;">
+            <button routerLink="/invitation" routerDirection="root" class="btn thumb-nail-button"
+                color="light">Back</button>
+        </ion-row> -->
+
+    </ion-grid>
+
+</ion-content>
+<footer class="footer">
+    <div style="float:left;">
+        <img src="assets/72x72.png">
+    </div>
+    <div style="float:left;">
+        <span class="footer-text"><a href="https://invitesmartapp.com" target="_blank">WWW.INVITESMARTAPP.COM</a></span>
+    </div>
+    <div style="float:right;margin-top: 15px;">
+        <ion-icon routerLink="/setting" ios="ios-settings" md="md-settings" style="zoom:3.0; color:#3E51B5;"></ion-icon>
+    </div>
+
+</footer>

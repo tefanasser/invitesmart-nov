@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar class="header-color headertm" style="padding-top:10px !important;padding-bottom: 10px !important;">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="thumbnails"></ion-back-button>
+          </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+   <ion-grid id="capture">
+      <!-- <div > -->
+          <ion-row>
+              <ion-col col-2 text-center>
+                    <img src="{{invitation.image}}">
+              </ion-col>
+          </ion-row>
+              <ion-row>
+                <ion-col size=4>
+                    <ngx-qrcode style="width:40px;" [(qrc-value)]="qrCode"></ngx-qrcode>
+                </ion-col>
+                <ion-col size=4 style="margin-top:70px; float:right;">
+                  <span   *ngIf="!invitation.name" style="color: hsl(60, 48%, 49%);">{{invitation.invitationCode}}</span>
+                    <span *ngIf="invitation.name" style="color: #30302d;">{{invitation.name}}</span>
+                </ion-col>
+                <ion-col size=4>
+                    <img src="assets/logo.png" style="margin-top:11px;">
+                </ion-col>
+              </ion-row>
+      <!-- </div> -->
+  </ion-grid>
+  </ion-content>
+  <footer class="footer">
+        <div style="float:left;">
+          <img src="assets/72x72.png">
+        </div>
+        <div style="float:left;">
+          <span class="footer-text"><a href="http://invitesmartapp.com/?reqp=1&reqr="  target="_blank">WWW.INVITESMARTAPP.COM</a></span>
+        </div>
+        <div style="float:right;margin-top: 15px;">
+            <ion-icon routerLink="/setting" ios="ios-settings" md="md-settings" style="zoom:3.0; color:#3E51B5;"></ion-icon>
+        </div>
+      
+      </footer>
+
+

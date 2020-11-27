@@ -1,0 +1,7 @@
+{
+  "name": "invite-smart",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

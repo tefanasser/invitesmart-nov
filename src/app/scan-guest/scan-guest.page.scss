@@ -1,0 +1,124 @@
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;  
+}
+
+:-ms-input-placeholder {  
+  text-align: center; 
+}
+.sub-header {
+ --background: #D3D1D1;
+ color:white;
+}
+ion-title {
+ position: absolute;
+ top: 0;
+ left: 45;
+//    padding: 0 90px 1px;
+ width: 100% !important;
+ height: 100% !important;
+ text-align: center;
+ font-family: 'oswald';
+ font-weight: normal;
+
+}
+ion-content ion-toolbar ion-title{
+ left: 0;
+
+}
+.item.sc-ion-label-ios-h, .item .sc-ion-label-ios-h {
+ font-family: 'Oswald' !important;
+}
+.list-md {
+margin-left: 0;
+margin-right: 0;
+margin-top: 0;
+margin-bottom: 0px !important ;
+padding-left: 0;
+padding-right: 0;
+padding-top: 0px !important;
+}
+.ion-list {
+display:contents !important;
+}
+.thumb-nail-button {
+  color: white;
+  background-color: #3E51B5;
+  border-radius: 29px;
+  padding: 13px;
+  font-size: 13px;
+  font-family: "oswald";
+  float: left;
+  margin-left: 5px;
+  margin-top: 8px;
+}
+#scannerArea {
+  margin-top:10px;
+}
+#scannerArea img {
+  opacity: 0.5;
+  max-width: 95%;
+  max-height: calc(98% - 100px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.card {
+  background-color: #D3D1D1;
+  width:150px; height:125px;
+}
+.thumb-nail-button {
+  color: white;
+  border-radius: 29px;
+  font-size: 20px;
+  font-family: "oswald";
+  color: white;
+  background-color: #3E51B5;
+  padding: 13px;
+  font-size: 13px;
+  font-family: "oswald";
+  float: left;
+  margin-left: 5px;
+   
+}
+ion-toast.success .toast-wrapper {
+background: white !important;
+width:400px;
+height:300px;
+}
+
+ion-toast.error .toast-wrapper {
+background: rgb(209, 71, 71);
+}
+ion-content{
+--ion-background-color:transparent !important;
+}
+
+ion-content {
+   --background: transparent;
+   opacity: 1;
+}
+.footer  img {
+  // background-color: black;
+  max-width: 95%;
+  max-height: calc(98% - 100px);
+  position: fixed;
+}
+.footer-text {
+  display: block;
+  margin-top: 24px;
+  // font-size: 14px;
+  padding-left: 113px !important;
+  text-align: center;
+}
+

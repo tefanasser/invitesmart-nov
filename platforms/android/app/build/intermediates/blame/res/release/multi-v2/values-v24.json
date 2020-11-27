@@ -1,0 +1,49 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/lenovo03/Desktop/project/invitesmartios/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/10af0d62c6e2090c156cdd61bfad39b6/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/lenovo03/Desktop/invitesmartios/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/10af0d62c6e2090c156cdd61bfad39b6/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/lenovo03/Desktop/invite-smart/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo03/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/3d23a2a3ebb6a60c4af155785fcd5f6e/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    }
+                }
+            ]
+        }
+    ]
+}

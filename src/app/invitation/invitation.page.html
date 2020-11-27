@@ -1,0 +1,34 @@
+<ion-header class="headertm">
+  <ion-toolbar style="padding-top: 20px !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 10px;">
+        <ion-title style="margin-left: 18px;" class="main-header"> {{'page.create_new_invitation' | translate}}</ion-title>
+        <ion-icon routerLink="/create-invitation" routerDirection="forward" ios="ios-add-circle" md="md-add-circle" class="plus-icon-style"></ion-icon>
+  </ion-toolbar>
+  </ion-header>
+     <ion-content>
+        <ion-toolbar class="sub-header">
+          <ion-title>{{ 'page.your invitations' | translate }}</ion-title>
+        </ion-toolbar>
+        <div *ngIf="isLoader" style="margin-left:49%;"><ion-spinner name="lines"></ion-spinner></div>
+          <!-- Item Dividers in a List -->
+          <ion-list *ngFor="let invitation of invitations">
+            <ion-item (click)="edit_invitation(invitation)"><ion-label><b>{{invitation.event_name | uppercase}}</b></ion-label>
+              <img class="img-icon" src="assets/arrow.png"  style="margin-top:0px;">
+              <!-- <ion-icon  name="arrow-forward" ></ion-icon> -->
+            </ion-item>
+          </ion-list>
+  </ion-content>
+  <footer class="footer">
+      <div style="float:left;">
+        <img src="assets/72x72.png">
+      </div>
+      <div style="float:left;">
+        <span class="footer-text"><a href="http://invitesmartapp.com/?reqp=1&reqr="  target="_blank">WWW.INVITESMARTAPP.COM</a></span>
+      </div>
+      <div style="float:right;margin-top: 15px;">
+          <ion-icon routerLink="/setting" ios="ios-settings" md="md-settings" style="zoom:3.0; color:#3E51B5;"></ion-icon>
+      </div>
+    
+    </footer>
+  

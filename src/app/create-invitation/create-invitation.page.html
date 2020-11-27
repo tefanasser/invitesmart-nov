@@ -1,0 +1,64 @@
+<!-- <ion-header >
+  <ion-toolbar class="toolbar-background">
+    <ion-buttons slot="start">
+      <!--<ion-back-button></ion-back-button>-->
+<!-- </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content>
+  <ion-grid class="ion-padding-top ">
+    <ion-row style="text-align: center;">
+      <ion-col size="12">
+        <form  class=" form " class="form app-form-area">
+          <div class="grid-padding">
+            <h3 color="primary" style="margin-top:10px;">{{'page.event_name' | translate}}</h3>
+            <div colass="row" style="text-align: -webkit-center;">
+              <div class="input-group prefix">
+                <ion-input type="text"  [(ngModel)]="event_name" [ngModelOptions]="{standalone: true}" >
+                </ion-input>
+              </div>
+            </div>
+            <br>
+            <h3 color="primary" style="margin-top:20px;">{{'page.invitation_image' | translate}}</h3>
+            <div class="input-group prefix image-field create-invitation invitation-image">
+              <input type="text" [(ngModel)]="currentImage" [ngModelOptions]="{standalone: true}" [(ngModel)]="image_name">
+              <ion-icon  class="plus-icon-style" (click)="CameraActionSheet()" ios="ios-add-circle" md="md-add-circle"></ion-icon>   
+            </div>
+
+            <div *ngIf="isLoader"><ion-spinner name="lines"></ion-spinner></div>
+            <div *ngIf="!currentImage">  <img src="assets/profile-image.png" style="margin-top:0px;"></div>
+            <!-- <img src="{{currentImage}}" style="height:50px; height:50px;"> -->
+            <div *ngIf="currentImage"> <img src="{{currentImage}}" style="margin-top:10px; margin-bottom:10px; border: 2px solid gray;"></div>
+            <h3 *ngIf="!isPlatform" color="primary" style="margin-top:10px;"> {{'page.event_location_link' | translate}}</h3>
+            <div *ngIf="!isPlatform" colass="row" style="text-align: -webkit-center;">
+              <div class="input-group prefix">
+                <ion-input type="text"  [(ngModel)]="event_location" [ngModelOptions]="{standalone: true}" >
+                </ion-input>
+              </div>
+            </div> 
+          </div>
+          <ion-row>
+          </ion-row>
+          <div class="row">
+            <button style="margin: 10px;" type="submit" routerLink="/invitation" class="btn send-button" color="primary">&nbsp;&nbsp;{{'page.back' | translate}}
+              &nbsp;&nbsp;</button>
+            <button style="margin: 10px;" type="submit"  (click)="nextPage()" class="btn send-button" color="primary">&nbsp;&nbsp;{{'page.next' | translate}} &nbsp;&nbsp;</button>
+            <!-- <button type="submit"  [disabled]="!invitation_form.valid" (click)="login()" class="btn submit-button" color="light">Next</button> -->
+            </div>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<footer class="footer">
+    <div style="float:left;">
+      <img src="assets/72x72.png">
+    </div>
+    <div style="float:left;">
+      <span class="footer-text"><a href="http://invitesmartapp.com/?reqp=1&reqr="  target="_blank">WWW.INVITESMARTAPP.COM</a></span>
+    </div>
+    <div style="float:right;margin-top: 15px;">
+        <ion-icon routerLink="/setting" ios="ios-settings" md="md-settings" style="zoom:3.0; color:#3E51B5;"></ion-icon>
+    </div>
+  
+  </footer>

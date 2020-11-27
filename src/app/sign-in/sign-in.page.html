@@ -1,0 +1,52 @@
+<ion-content class="centered container">
+        <ion-grid class="ion-padding-top grid-padding">
+            <ion-row>
+              <ion-col class="font-bold mgbottom50 font20">
+                  {{ 'page.enter_the_one_time_password' | translate }}
+                <!-- ENTER THE ONE-TIME<br>PASSWORD SEND TO<br>YOUR PHONE -->
+              </ion-col>
+            </ion-row>
+        <ion-row>
+          <ion-col size="12">
+             
+            <form [formGroup]="login_form" class="form " class="form-deco form app-form-area">
+              <div class="row" style="text-align: -webkit-center;">
+                  <div class="input-group prefix">
+                    <ion-input type="text"  minLength="4" maxLength="4" [(ngModel)]="otp_code" formControlName="otp_code" placeholder=""></ion-input>
+                  </div>
+                </div>
+                <div class="validation-errors">
+                    <ng-container *ngFor="let validation of validation_messages.otp_code">
+                      <div class="error-message"
+                        *ngIf="login_form.get('otp_code').hasError(validation.type) && (login_form.get('otp_code').dirty || login_form.get('otp_code').touched)">
+                        <ion-icon style="color: red;" ios="ios-information-circle" md="md-information-circle"></ion-icon><span
+                          style="color: red;">{{validation.message}}</span>
+                      </div>
+                    </ng-container>
+                  </div>
+              <br>
+              <div *ngIf="isLoader"><ion-spinner name="lines"></ion-spinner></div>
+              <div class="row">
+                <button type="submit"  [disabled]="!login_form.valid" (click)="login()" class="btn send-button" color="primary">&nbsp;&nbsp; {{ 'page.sign in' | translate }} &nbsp;&nbsp;</button>
+              </div>
+            </form>
+            <div class="des-text"> {{ 'page.support_text' | translate }}</div>
+            <div class="whatsup-link" (click)="redirect()">
+              <img src="assets/whatsup-icon.png"
+              />
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>
+<footer class="footer">
+    <div style="float:left;">
+      <img src="assets/72x72.png">
+    </div>
+    <div style="float:left;">
+      <span class="footer-text"><a href="http://invitesmartapp.com/?reqp=1&reqr="  target="_blank">WWW.INVITESMARTAPP.COM</a></span>
+    </div>
+    <div style="float:right;margin-top: 15px;">
+        <ion-icon routerLink="/setting" ios="ios-settings" md="md-settings" style="zoom:3.0; color:#3E51B5;"></ion-icon>
+    </div>
+  </footer>
